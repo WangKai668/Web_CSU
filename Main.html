@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>中南大学</title>
+    <link rel="stylesheet" href="Main.css" />
+    <script src="Main.js"></script>
+</head>
+
+<body onload="bannerMove();main1BannerMove();main3ContentMove();">
+    <div class="header" ><!--头部导航栏-->
+        <div class="headerLeft">
+            <ul class="headerUlsl navFonts">
+                <li>学生</li>
+                <li>教职工</li>
+                <li>未来学生</li>
+                <li>校友校董</li>
+                <li>人才招聘</li>
+            </ul>
+            <ul class="headerUl">
+                <li onmouseover="downMenu(this)" onmouseout="upMenu(this)">
+                    <a href="http://www.baidu.com" class="navFont">走进中南</a>
+                    <div class="dropdownContent">
+                        <a href="http://www.csu.edu.cn/">学校概况</a>
+                        <a href="http://www.csu.edu.cn/">历史沿革</a>
+                        <a href="http://www.csu.edu.cn/">学校领导</a>
+                        <a href="http://www.csu.edu.cn/">机构设置</a>
+                        <a href="http://www.csu.edu.cn/">数据中南</a>
+                    </div>
+                </li>
+                <li onmouseover="downMenu(this)" onmouseout="upMenu(this)">
+                    <a href="http://www.baidu.com" class="navFont">教育教学</a>
+                    <div class="dropdownContent">
+                        <a href="http://www.csu.edu.cn/">本科生教育</a>
+                        <a href="http://www.csu.edu.cn/">研究生教育</a>
+                        <a href="http://www.csu.edu.cn/">留学生教育</a>
+                        <a href="http://www.csu.edu.cn/">继续教育</a>
+                        <a href="http://www.csu.edu.cn/">精品课程</a>
+                    </div>
+                </li>
+                <li onmouseover="downMenu(this)" onmouseout="upMenu(this)">
+                    <a href="http://www.baidu.com" class="navFont">学院学科</a>
+                    <div class="dropdownContent">
+                        <a href="http://www.csu.edu.cn/">二级学院</a>
+                        <a href="http://www.csu.edu.cn/">学科专业</a>
+                    </div>
+                </li>
+                <li onmouseover="downMenu(this)" onmouseout="upMenu(this)">
+                    <a href="http://www.baidu.com" class="navFont">师资队伍</a>
+                    <div class="dropdownContent">
+                        <a href="http://www.csu.edu.cn/">两院院士</a>
+                        <a href="http://www.csu.edu.cn/">国家杰青</a>
+                        <a href="http://www.csu.edu.cn/">国家优青</a>
+                        <a href="http://www.csu.edu.cn/">万人计划</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="headerRight">
+            <ul class="headerUlsr navFonts">
+                <li>旧版</li>
+                <li>English</li>
+                <li>研究机构</li>
+                <li>教育机构</li>
+                <li>图书馆</li>
+            </ul>
+            <ul class="headerUl navFont">
+                <li>科学研究</li>
+                <li>招生就业</li>
+                <li>合作交流</li>
+                <li>学生天地</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="headerLogo">
+        <img src="images/logo.png" style="width:100%;height:240px;">
+        <img src="images/logo-1.png" style="margin-left:20%;width:60%;height:140px;display:none;">
+    </div>
+
+    <div class="banner"> <!-- 轮播图栏 -->
+        <div class="bannerPicWrap">
+            <img src="images/banner1.jpg" data-id="1" class="bannerPic" style="display: block;opacity: 1;">
+            <img src="images/banner2.jpg" data-id="2" class="bannerPic">
+            <img src="images/banner3.jpg" data-id="3" class="bannerPic">
+            <img src="images/banner4.jpg" data-id="4" class="bannerPic">
+            <img src="images/banner5.jpg" data-id="5" class="bannerPic">
+        </div>
+        <div class="bannerCtrlWrap">
+            <ul class="bannerCtrlUl">
+                <li class="bannerCtrl" data-id="1" onclick="changeBanner(this)" style="background-color: tomato;"></li>
+                <li class="bannerCtrl" data-id="2" onclick="changeBanner(this)"></li>
+                <li class="bannerCtrl" data-id="3" onclick="changeBanner(this)"></li>
+                <li class="bannerCtrl" data-id="4" onclick="changeBanner(this)"></li>
+                <li class="bannerCtrl" data-id="5" onclick="changeBanner(this)"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main1"> <!-- 中南要闻 -->
+        <div class="main1Title">
+            <div class="main1TitleLeft">中南要闻</div>
+            <div class="main1TitleRight"><span style="font-weight: bold;">···</span> 更多</div>
+        </div>
+        <div class="main1Content">
+            <div class="main1Banner">
+                <div class="main1BannerWrap">
+                    <div class="main1BannerItem" style="left:0%;">
+                        <img src="images/main1_pic1.jpg" class="main1BannerPic">
+                        <div class="main1BannerText">
+                            <p class="main1BannerText1">中南大学陈志刚入选高校计算机专业优秀教师奖励计划</p>
+                            <p class="main1BannerText2">2020-11-11</p>
+                        </div>
+                    </div>
+                    <div class="main1BannerItem" style="left:100%;">
+                        <img src="images/main1_pic2.png" class="main1BannerPic">
+                        <div class="main1BannerText">
+                            <p class="main1BannerText1">解读中南大学“54321”研究生教育体系</p>
+                            <p class="main1BannerText2">2020-11-10</p>
+                        </div>
+                    </div>
+                    <div class="main1BannerItem" style="left:200%;">
+                        <img src="images/main1_pic3.jpg" class="main1BannerPic">
+                        <div class="main1BannerText">
+                            <p class="main1BannerText1">中南大学召开研究生教育会议</p>
+                            <p class="main1BannerText2">2020-11-10</p>
+                        </div>
+                    </div>
+                    <div class="main1BannerItem" style="left:300%;">
+                        <img src="images/main1_pic4.jpg" class="main1BannerPic">
+                        <div class="main1BannerText">
+                            <p class="main1BannerText1">中南大学博士生李沈鑫获全国“高校GIS新秀”奖</p>
+                            <p class="main1BannerText2">2020-11-10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main1BannerCtrlWrap">
+                    <ul class="main1BannerCtrlUl">
+                        <li class="main1BannerCtrl" data-id="1" onclick="changeMain1Banner(this)" style="background:url(images/main1_Ctrl1.png)"></li>
+                        <li class="main1BannerCtrl" data-id="2" onclick="changeMain1Banner(this)"></li>
+                        <li class="main1BannerCtrl" data-id="3" onclick="changeMain1Banner(this)"></li>
+                        <li class="main1BannerCtrl" data-id="4" onclick="changeMain1Banner(this)"></li>
+                </div>
+            </div>
+            <ul class="main1Table">
+                <li class="main1TableItem">
+                    <a href="http://www.csu.edu.cn/" > 
+                        <p class="main1TableTitle">中南大学组团亮相第五届中国高等工程教育论坛</p>
+                        <p class="main1TableDate"><span><img src="images/main1_table.png"></span> 2020-11-11</p>
+                    </a>
+                </li>
+                <li class="main1TableItem">
+                    <a href="http://www.csu.edu.cn/"> 
+                        <p class="main1TableTitle">中南大学梁叔全团队在低成本储能领域取得系列研究进展</p>
+                        <p class="main1TableDate"><span><img src="images/main1_table.png"></span> 2020-11-11</p>
+                    </a>
+                </li>
+                <li class="main1TableItem">
+                    <a href="http://www.csu.edu.cn/"> 
+                        <p class="main1TableTitle">中南大学陈志刚入选高校计算机专业优秀教师奖励计划</p>
+                        <p class="main1TableDate"><span><img src="images/main1_table.png"></span> 2020-11-11</p>
+                    </a>
+                </li>
+                <li class="main1TableItem">
+                    <a href="http://www.csu.edu.cn/"> 
+                        <p class="main1TableTitle">解读中南大学“54321”研究生教育体系</p>
+                        <p class="main1TableDate"><span><img src="images/main1_table.png"></span> 2020-11-10</p>
+                    </a>
+                </li>
+                <li class="main1TableItem">
+                    <a href="http://www.csu.edu.cn/"> 
+                        <p class="main1TableTitle">中南大学召开研究生教育会议</p>
+                        <p class="main1TableDate"><span><img src="images/main1_table.png"></span> 2020-11-10</p>
+                    </a>
+                </li>
+                <li class="main1TableItem">
+                    <a href="http://www.csu.edu.cn/"> 
+                        <p class="main1TableTitle">中南大学博士生李沈鑫获全国“高校GIS新秀”奖</p>
+                        <p class="main1TableDate"><span><img src="images/main1_table.png"></span> 2020-11-10</p>
+                    </a>
+                </li>
+                <li class="main1TableItem">
+                    <a href="http://www.csu.edu.cn/"> 
+                        <p class="main1TableTitle">中南大学张斗、孙健等在《Advanced Materials》发表铁电晶体管最新研究成果</p>
+                        <p class="main1TableDate"><span><img src="images/main1_table.png"></span> 2020-11-09</p>
+                    </a>
+                </li>
+                <li class="main1TableItem">
+                    <a href="http://www.csu.edu.cn/"> 
+                        <p class="main1TableTitle">【致敬中南良师】蔺永诚：学生是我“锻造”过的最佳成果</p>
+                        <p class="main1TableDate"><span><img src="images/main1_table.png"></span> 2020-11-08</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>  
+
+    <div class="main2"> <!-- 学术讲座/中南通告 媒体中南 -->
+        <div class="main2Title">
+            <div class="main2TitleCenter">
+                <span class="main2TitleCenterL" onmouseover="changeMain2Content(1)">学术讲座</span>
+                <span class="main2TitleCenterR" onmouseover="changeMain2Content(2)">中南通告</span>
+            </div>
+            <div class="main2TitleRight"><span style="font-weight: bold;">···</span> 更多</div>
+        </div>
+        <ul class="main2ContentWrap" id="main2ContentWrap1" >
+            <li class="main2ContentItem">
+                <div class="main2ContentItemDate">
+                    <p style="font-size: x-large;">02</p>
+                    <p style="font-size: small;">2020-11</p>
+                    <p style="font-size: small;">周一</p>
+                </div>
+                <div class="main2ContentItemText">
+                    <a href="www.baidu.com" style="font-size: 16px;">Analysis of operator splitting methods for Camassa-Holm equation</a>
+                    <div class="main2ContentItemInfo">
+                        <p><span><img src="images/main2_icon1.png"> </span> 赵景军教授，哈尔滨工业大学</p>
+                        <p><span><img src="images/main2_icon2.png"> </span> 2020年11月3日10:00-12:00</p>
+                        <p><span><img src="images/main2_icon3.png"> </span> 数学院145报告厅</p>
+                    </div>
+                </div>
+            </li>   
+            <li class="main2ContentItem">
+                <div class="main2ContentItemDate">
+                    <p style="font-size: x-large;">29</p>
+                    <p style="font-size: small;">2020-10</p>
+                    <p style="font-size: small;">周四</p>
+                </div>
+                <div class="main2ContentItemText">
+                    <a href="www.baidu.com" style="font-size: 16px;">Optimal dividend problems with a probability criterion</a>
+                    <div class="main2ContentItemInfo">
+                        <p><span><img src="images/main2_icon1.png"> </span> 中山大学数学院 郭先平教授</p>
+                        <p><span><img src="images/main2_icon2.png"> </span> 10月30日17:00</p>
+                        <p><span><img src="images/main2_icon3.png"> </span> 数理楼362室</p>
+                    </div>
+                </div>
+            </li>   
+            <li class="main2ContentItem">
+                <div class="main2ContentItemDate">
+                    <p style="font-size: x-large;">26</p>
+                    <p style="font-size: small;">2020-10</p>
+                    <p style="font-size: small;">周一</p>
+                </div>
+                <div class="main2ContentItemText">
+                    <a href="www.baidu.com" style="font-size: 16px;">中南大学商学院经管大讲堂第75期</a>
+                    <div class="main2ContentItemInfo">
+                        <p><span><img src="images/main2_icon1.png"> </span> 复旦大学世界经济研究所所长万广华教授</p>
+                        <p><span><img src="images/main2_icon2.png"> </span> 11月2日10:00</p>
+                        <p><span><img src="images/main2_icon3.png"> </span> 管理楼409教室</p>
+                    </div>
+                </div>
+            </li>   
+        </ul>
+        <ul class="main2ContentWrap" id="main2ContentWrap2" style="display: none;">
+            <li class="main2ContentItem">
+                <div class="main2ContentItemDate">
+                    <p style="font-size: x-large;">31</p>
+                    <p style="font-size: small;">2019-12</p>
+                    <p style="font-size: small;">周二</p>
+                </div>
+                <div class="main2ContentItemText">
+                    <a href="www.baidu.com" style="font-size: 16px;">关于发布《中南大学2019年毕业生就业质量报告》的公告</a>
+                    <div class="main2ContentItemInfo">
+                        <p>根据《教育部关于做好2019届全国普通高等学校毕业生就业创业工作的通知》（教学〔2018〕8号）及《教育部办公厅关于编制发布...</p>
+                    </div>
+                </div>
+            </li>   
+            <li class="main2ContentItem">
+                <div class="main2ContentItemDate">
+                    <p style="font-size: x-large;">31</p>
+                    <p style="font-size: small;">2019-12</p>
+                    <p style="font-size: small;">周二</p>
+                </div>
+                <div class="main2ContentItemText">
+                    <a href="www.baidu.com" style="font-size: 16px;">关于向广大师生校友诚征校史资料的公告</a>
+                    <div class="main2ContentItemInfo">
+                        <p> 百余年薪火相传，百余年凯歌奋进，成就今日之中南大学。为探寻中南历史文脉、讲好中南档案故事、建设中南“精神家园”...</p>
+                    </div>
+                </div>
+            </li>  
+            <li class="main2ContentItem">
+                <div class="main2ContentItemDate">
+                    <p style="font-size: x-large;">03</p>
+                    <p style="font-size: small;">2019-04</p>
+                    <p style="font-size: small;">周三</p>
+                </div>
+                <div class="main2ContentItemText">
+                    <a href="www.baidu.com" style="font-size: 16px;">关于2019年起停止高等学历继续教育招生的公告</a>
+                    <div class="main2ContentItemInfo">
+                        <p> 根据学校加快继续教育发展转型，大力开展非学历高端培训的要求，经学校研究决定，从2019年起我校全面停止高等学历继续...</p>
+                    </div>
+                </div>
+            </li>  
+        </ul>
+        <div class="main2Other">
+            <div class="main2OtherTitleL">媒体中南</div>
+            <div class="main2OtherLine1"></div>
+            <div class="main2OtherLine2"></div>
+            <div class="main2OtherTitleR"><span style="font-weight: bold;">···</span> 更多</div>
+        </div>
+        <div class="main2OtherContentWrap">
+            <ul data-id="1" style="left:0%">
+                <li class="main2OtherContentItem">
+                    <div class="main2OtherContentItemDate">
+                        <p style="font-size: x-large;">19</p>
+                        <p style="font-size: small;">2020-10</p>
+                    </div>
+                    <div class="main2ContentItemText">
+                        <a href="www.baidu.com" style="font-size: 16px;">中南大学湘雅医院党员博士服务团赴汝城县义诊</a>
+                    </div>
+                </li>
+                <li class="main2OtherContentItem">
+                    <div class="main2OtherContentItemDate">
+                        <p style="font-size: x-large;">19</p>
+                        <p style="font-size: small;">2020-10</p>
+                    </div>
+                    <div class="main2ContentItemText">
+                        <a href="www.baidu.com" style="font-size: 16px;">国家扶贫日：中南大学打造“迷你集市” 助力瑶寨江华脱贫攻坚</a>
+                    </div>
+                </li>
+                <li class="main2OtherContentItem">
+                    <div class="main2OtherContentItemDate">
+                        <p style="font-size: x-large;">19</p>
+                        <p style="font-size: small;">2020-10</p>
+                    </div>
+                    <div class="main2ContentItemText">
+                        <a href="www.baidu.com" style="font-size: 16px;">中南大学举行2020助力江华脱贫攻坚大型爱心义卖活动 </a>
+                    </div>
+                </li>
+            </ul>
+            <ul data-id="2" style="left:100%">
+                <li class="main2OtherContentItem">
+                    <div class="main2OtherContentItemDate">
+                        <p style="font-size: x-large;">23</p>
+                        <p style="font-size: small;">2020-10</p>
+                    </div>
+                    <div class="main2ContentItemText">
+                        <a href="www.baidu.com" style="font-size: 16px;">杨保华：凝聚中国科技期刊智慧，助力中国成为世界科学中心 </a>
+                    </div>
+                </li>
+                <li class="main2OtherContentItem">
+                    <div class="main2OtherContentItemDate">
+                        <p style="font-size: x-large;">23</p>
+                        <p style="font-size: small;">2020-10</p>
+                    </div>
+                    <div class="main2ContentItemText">
+                        <a href="www.baidu.com" style="font-size: 16px;">湖南省应急心理干预指导中心培训演练举行 </a>
+                    </div>
+                </li>
+                <li class="main2OtherContentItem">
+                    <div class="main2OtherContentItemDate">
+                        <p style="font-size: x-large;">20</p>
+                        <p style="font-size: small;">2020-10</p>
+                    </div>
+                    <div class="main2ContentItemText">
+                        <a href="www.baidu.com" style="font-size: 16px;">湖南一医院成功实施智能视觉植入器手术 助失明多年患者重见光明 </a>
+                    </div>
+                </li>
+            </ul>
+            <ul data-id="3" style="left:200%;">
+                <li class="main2OtherContentItem">
+                    <div class="main2OtherContentItemDate">
+                        <p style="font-size: x-large;">20</p>
+                        <p style="font-size: small;">2020-10</p>
+                    </div>
+                    <div class="main2ContentItemText">
+                        <a href="www.baidu.com" style="font-size: 16px;">中南大学：扶贫日赶个“瑶家集” </a>
+                    </div>
+                </li>
+                <li class="main2OtherContentItem">
+                    <div class="main2OtherContentItemDate">
+                        <p style="font-size: x-large;">19</p>
+                        <p style="font-size: small;">2020-10</p>
+                    </div>
+                    <div class="main2ContentItemText">
+                        <a href="www.baidu.com" style="font-size: 16px;">“我保卫过一个城市，叫武汉” </a>
+                    </div>
+                </li>
+                <li class="main2OtherContentItem">
+                    <div class="main2OtherContentItemDate">
+                        <p style="font-size: x-large;">19</p>
+                        <p style="font-size: small;">2020-10</p>
+                    </div>
+                    <div class="main2ContentItemText">
+                        <a href="www.baidu.com" style="font-size: 16px;">【中南扶贫录】大瑶山上那八年 </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="main2OtherContentCtrlWrap">
+                <ul class="main2OtherContentCtrlUl">
+                    <li class="main2OtherContentCtrl" data-id="1" onclick="changeMain2OtherContent(this)" style="background-color:#0751a1;"></li>
+                    <li class="main2OtherContentCtrl" data-id="2" onclick="changeMain2OtherContent(this)"></li>
+                    <li class="main2OtherContentCtrl" data-id="3" onclick="changeMain2OtherContent(this)"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main3"> <!-- 数据中南  专题网站 -->
+        <div class="main3Title">
+            <p class="main3TitleFont">数据中南</span>
+            <div class="main3TitleLine1"></div>
+            <div class="main3TitleLine2"></div>
+        </div>
+        <div class="main3ContentWrap">
+            <ul data-id="1" style="left:0%">
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_11.png">
+                        <p>317</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>占地面积</p>
+                        <p>317万平方米</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_12.png">
+                        <p>130</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>绿化面积</p>
+                        <p>130万平方米</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_13.png">
+                        <p>67.23</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>固定资产</p>
+                        <p>67.23亿元</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_14.png">
+                        <p>521.84</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>图书实体藏量</p>
+                        <p>521.84万册</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_15.png">
+                        <p>573.80</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>电子图书</p>
+                        <p>573.80万册</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_16.png">
+                        <p>4</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>附属医院</p>
+                        <p>4个</p>
+                    </div>
+                </li>
+            </ul>
+
+            <ul data-id="2" style="left:100%">
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_21.png">
+                        <p>58279</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>全日制在校学生</p>
+                        <p>58279人</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_22.png">
+                        <p>6027</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>在职教职工</p>
+                        <p>6027人</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_23.png">
+                        <p>17</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>院士</p>
+                        <p>17人</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_24.png">
+                        <p>2</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>全国教书育人楷模</p>
+                        <p>2人</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_25.png">
+                        <p>26</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>国家杰出青年</p>
+                        <p>科学基金获得者26人</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_26.png">
+                        <p>19</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>“973计划”项目</p>
+                        <p>首席科学家19人</p>
+                    </div>
+                </li>
+            </ul>
+
+            <ul data-id="3" style="left:200%">
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_31.png">
+                        <p>18</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>国家重点学科</p>
+                        <p>18个</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_32.png">
+                        <p>106</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>本科专业</p>
+                        <p>106个</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_33.png">
+                        <p>46</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>硕士学位授予</p>
+                        <p>一级学科点46个</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_34.png">
+                        <p>27</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>国家级</p>
+                        <p>科技创新平台27个</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_35.png">
+                        <p>212</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>自然科学类省、部级</p>
+                        <p>科技创新平台212个</p>
+                    </div>
+                </li>
+                <li class="main3ContentItem">
+                    <div class="main3ContentIcon">
+                        <img src="images/main3_36.png">
+                        <p>24</p>
+                    </div>
+                    <div class="main3ContentInfo">
+                        <p>人文社科类省、部级</p>
+                        <p>科学研究基地24个</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="main3ContentCtrlWrap">
+                <ul class="main3ContentCtrlUl">
+                    <li class="main3ContentCtrl" data-id="1" onclick="changeMain3Content(this)" style="background-color:rgb(235, 235, 62);"></li>
+                    <li class="main3ContentCtrl" data-id="2" onclick="changeMain3Content(this)"></li>
+                    <li class="main3ContentCtrl" data-id="3" onclick="changeMain3Content(this)"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main3Other">
+            <div class="main3OtherTitle"><p>专题网站</p></div>
+            <ul class="main3OtherContent">
+                <li class="main3OtherImg"><img src="images/main3_pic1.jpg"></li>
+                <li class="main3OtherImg"><img src="images/main3_pic2.jpg"></li>
+                <li class="main3OtherImg"><img src="images/main3_pic3.jpg"></li>
+                <li class="main3OtherImg"><img src="images/main3_pic4.jpg"></li>
+                <li class="main3OtherImg"><img src="images/main3_pic5.jpg"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer"> <!-- 页脚 -->
+        <div class="footerTop">
+            <div class="footerTopItem" onmouseover="upFooterMenu(1)" onmouseout="downFooterMenu()">
+                <img src="images/footer_top1.png">
+                <p>常用网站</p>
+                <img src="images/hover_down.png">
+            </div>
+            <div class="footerTopItem" onmouseover="upFooterMenu(2)" onmouseout="downFooterMenu()">
+                <img src="images/footer_top2.png">
+                <p>常用系统</p>
+                <img src="images/hover_down.png">
+            </div>
+            <div class="footerTopItem" onmouseover="upFooterMenu(3)" onmouseout="downFooterMenu()">
+                <img src="images/footer_top3.png" >
+                <p>常用信息</p>
+                <img src="images/hover_down.png">
+            </div>
+            <div class="footerTopItem" onmouseover="upFooterMenu(4)" onmouseout="downFooterMenu()">
+                <img src="images/footer_top4.png">
+                <p>常用链接</p>
+                <img src="images/hover_down.png">
+            </div>
+            <div class="footerUpContent" onmouseover="upFooterMenu(1)" onmouseout="downFooterMenu()">
+                <a>校内导航</a><a>信息公开网</a><a>校友总会</a><a>教育基金会</a>
+                <a>中南新闻网</a><a>学术期刊</a><a>中南大学科技园</a><a>本科生院</a>
+                <a>研究生院</a><a>科学研究部</a><a>阳光体育</a> <a>图书馆</a>
+                <a>档案馆</a><a>湘雅医学院</a><a>铁道校区</a><a>后勤服务</a>
+                <a>采购与招标管理中心</a><a>附属医院</a>
+            </div>
+            <div class="footerUpContent" onmouseover="upFooterMenu(2)" onmouseout="downFooterMenu()">
+                <a>教师个人主页</a><a>邮件系统</a><a>党委信箱</a><a>校长信箱</a>
+                <a>校园卡电子服务大厅</a><a>高性能计算</a><a>本科教务关系系统</a><a>研究生管理</a>
+                <a>科学研究与发展信息平</a><a>在线课程平台</a><a>奖助学金系统</a><a>人事综合管理系统</a>
+                <a>公文协同平台</a><a>干部学习系统</a><a>采招系统</a><a>资产管理平台</a>
+                <a>仪器设备竞价</a><a>数字迎新系统</a><a>数字离校系统</a><a>后勤零修平台</a>
+                <a>网上办事大厅</a><a>机关作风评价</a>
+            </div>
+            <div class="footerUpContent" onmouseover="upFooterMenu(3)" onmouseout="downFooterMenu()">
+                <a>信息公开网</a><a>校友总会</a><a>教育基金会</a>
+                <a>中南新闻网</a><a>学术期刊</a><a>中南大学科技园</a><a>本科生院</a>
+                <a>研究生院</a><a>信息公开网</a><a>校友总会</a><a>教育基金会</a>
+                <a>中南新闻网</a><a>学术期刊</a><a>中南大学科技园</a><a>本科生院</a>
+                <a>研究生院</a><a>信息公开网</a><a>校友总会</a><a>教育基金会</a>
+                <a>中南新闻网</a>
+            </div>
+            <div class="footerUpContent" onmouseover="upFooterMenu(4)" onmouseout="downFooterMenu()">
+                <a>信息公开网</a><a>校友总会</a><a>教育基金会</a>
+                <a>中南新闻网</a><a>学术期刊</a>
+            </div>
+        </div>
+        <div class="footerMid">
+            <div class="footerMidLogo">
+                <img src="images/footer_logo.png">
+            </div>
+            <div class="footerMidText">
+                <p>通信地址: 湖南省长沙市麓山南路932号&nbsp&nbsp&nbsp&nbsp&nbsp邮政编码: 410083</p>
+                <p>校内电话查询: 0731-88876114&nbsp&nbsp&nbsp&nbsp&nbsp意见反馈邮箱：homepage@csu.edu.cn</p>
+            </div>
+            <div class="footerMidIcon">
+                <img src="images/footer_mid1.png">
+                <img src="images/footer_mid2.png">
+                <img src="images/footer_mid3.png">
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="footerBottomItem">湘ICP备05005659号-1</div>
+            <div class="footerBottomItem">湘教QS3-200505-00020</div>
+            <div class="footerBottomItem">中南大学版权所有</div>
+        </div>
+    </div>
+          
+    <div class="side">  <!-- 侧边栏 -->
+        <a class="sideItem" href="http://www.csu.edu.cn/" onmouseover="sideItemIn(this)" onmouseout="sideItemOut(this)">
+            <img src="images/side1.png"> 
+            <p>校内通知</p>
+        </a>
+        <a class="sideItem" href="http://www.csu.edu.cn/" onmouseover="sideItemIn(this)" onmouseout="sideItemOut(this)">
+            <img src="images/side2.png"> 
+            <p>校内公文</p>
+        </a>
+        <a class="sideItem" href="http://www.csu.edu.cn/" onmouseover="sideItemIn(this)" onmouseout="sideItemOut(this)">
+            <img src="images/side3.png"> 
+            <p>每周会议</p>
+        </a>
+        <a class="sideItem" href="http://www.csu.edu.cn/" onmouseover="sideItemIn(this)" onmouseout="sideItemOut(this)">
+            <img src="images/side4.png"> 
+            <p>中大信息</p>
+        </a>
+        <a class="sideItem" href="http://www.csu.edu.cn/" onmouseover="sideItemIn(this)" onmouseout="sideItemOut(this)">
+            <img src="images/side5.png"> 
+            <p>中南邮箱</p>
+        </a>
+        <a class="sideItem" href="http://www.csu.edu.cn/" onmouseover="sideItemIn(this)" onmouseout="sideItemOut(this)">
+            <img src="images/side6.png"> 
+            <p>信息门户</p>
+        </a>
+        <a class="sideItem" href="http://www.csu.edu.cn/" onmouseover="sideItemIn(this)" onmouseout="sideItemOut(this)">
+            <img src="images/side7.png"> 
+            <p>常用网站</p>
+        </a>
+
+        <div class="sideCtrl" onclick="changeSide(this)">
+            <img src="images/side_ctrl1.png">
+        </div>
+    </div>
+         
+</body>
+
+</html>
